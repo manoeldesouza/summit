@@ -11,9 +11,9 @@ HTTP. Summit capabilties can be described by what it does not do:
 
  - Summit serves static files only;
  - Files served are relative to local directory;
- - Either a successful response is provided (200), or Not Found (404);
- - The only "concession" is the automatic appending of "index.html" if the URL
-   consists of a directory instead of a regular file.
+ - Either a successful response (200), or Not Found (404) is provided;
+ - If a directory is part of the HTTP GET, an index file "index.html" will be 
+   assumed instead.
 
 
 ## Compilation
@@ -24,9 +24,10 @@ in ./target/release directory:
     $ cargo build --release
 
 
-or play with it using: 
+Then play the example html file using: 
 
-    $ cargo run
+    $ cd example
+    $ ../target/release/summit
 
 
 ## Usage
@@ -42,4 +43,4 @@ specified, summit will defaults to TCP port 8080.
 
 Manoel de Souza <manoel.desouza@outlook.com.br>
 
-March 2020
+April 2020

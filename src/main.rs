@@ -49,7 +49,7 @@ fn handle_connection(mut stream: net::TcpStream) {
 
   let url = match request_content.split_whitespace().nth(1) {
     Some(url) => url.to_string(),
-    None      => "/".to_string(),
+    None      => return,
   };
 
   let path = if url.chars().last().unwrap() == '/' {
