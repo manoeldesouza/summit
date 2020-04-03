@@ -1,5 +1,5 @@
 
-# Sumit
+# Summit
 
 A bare-bones static HTTP server
 
