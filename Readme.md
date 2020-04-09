@@ -16,6 +16,10 @@ HTTP. Summit capabilties can be described by what it does not do:
    assumed instead.
 
 
+For serving dynamic pages, consult the library Hike:
+https://github.com/manoeldesouza/hike 
+
+
 ## Compilation
 
 Use the regular Rust compilation via cargo. The executable file will be placed 
